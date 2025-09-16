@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>30MFF Website</title>
-  <!-- Link to styles -->
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <!-- Small interactive cursor follower -->
+  <!-- Small interactive cursor dot -->
   <div class="cursor" aria-hidden="true"></div>
 
-  <!-- ===== NAVIGATION ===== -->
+  <!-- ===== NAVIGATION (links to sections) ===== -->
   <header>
     <nav class="nav">
       <a href="#home">Home</a>
@@ -22,7 +22,7 @@
   </header>
 
   <main>
-    <!-- ===== HOME ===== -->
+    <!-- ===== HOME (hero image + info) ===== -->
     <section id="home" class="page">
       <h1>My 30MFF Film</h1>
       <p class="student">Jana Mohsen, Comms Lab Assignment 1, 2025</p>
@@ -30,21 +30,22 @@
       <img src="media/Home.jpeg" alt="Film poster" class="hero">
     </section>
 
-    <!-- ===== VIDEO (YouTube embed link) ===== -->
+    <!-- ===== VIDEO (YouTube EMBED — not a local file) ===== -->
     <section id="video" class="page" hidden>
       <h1>Watch the Film</h1>
       <div class="video-embed">
         <iframe
-          src="https://www.youtube.com/embed/RTP9gCut6AQ"
+          src="https://www.youtube.com/embed/RTP9gCut6AQ?rel=0"
           title="30MFF Film — Jana Mohsen"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen>
         </iframe>
       </div>
     </section>
 
-    <!-- ===== GALLERY ===== -->
+    <!-- ===== GALLERY (simple slideshow) ===== -->
     <section id="gallery" class="page" hidden>
       <h1>Photo Gallery</h1>
       <div class="gallery">
@@ -54,36 +55,35 @@
       </div>
     </section>
 
-    <!-- ===== ABOUT ===== -->
+    <!-- ===== ABOUT (bigger serif paragraphs) ===== -->
     <section id="about" class="page" hidden>
       <h1>About the Film</h1>
       <div class="about-text">
         <p>
           My name is Jana Mohsen. I am majoring in BOS and minoring in Interactive Media.
-          I’m a senior who often walks to the convenience store during class breaks,
-          and that routine inspired this video.
+          I’m a senior who often walks to the convenience store during class breaks, and that routine
+          inspired this video.
         </p>
         <p>
-          I wanted it to feel like a perspective video—what I actually see as I walk—
-          so the filming is intentionally casual and not polished. That choice reflects
-          how the moment feels to me, not a staged version of it.
+          I wanted it to feel like a perspective video—what I actually see as I walk—so the filming is
+          intentionally casual and not polished. That choice reflects how the moment feels to me, not a staged
+          version of it.
         </p>
         <p>
-          Walking outside helps me reconnect with the space around me. I usually shuffle
-          my playlist and let random songs carry me so I don’t waste time deciding.
-          That spontaneous soundtrack and the short walk are the reset I need before
-          the second half of class.
+          Walking outside helps me reconnect with the space around me. I usually shuffle my playlist and let
+          random songs carry me so I don’t waste time deciding. That spontaneous soundtrack and the short walk
+          are the reset I need before the second half of class.
         </p>
       </div>
     </section>
   </main>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- ===== FOOTER (name + class info) ===== -->
   <footer>
     <p>Jana Mohsen — Assignment 1, Comms Lab</p>
   </footer>
 
-  <!-- Link to JavaScript -->
+  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
