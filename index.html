@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <!-- Cursor follower (interactive) -->
+  <!-- Cursor follower -->
   <div class="cursor" aria-hidden="true"></div>
 
   <!-- Navigation -->
@@ -42,21 +42,26 @@
     <section id="gallery" class="page" hidden>
       <h1>Photo Gallery</h1>
       <div class="gallery">
-        <button id="prev" class="arrow">⟨</button>
+        <button id="prev" class="arrow" aria-label="Previous">⟨</button>
         <img id="slide" src="media/Pic1.jpeg" alt="Gallery photo">
-        <button id="next" class="arrow">⟩</button>
+        <button id="next" class="arrow" aria-label="Next">⟩</button>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="page" hidden>
       <h1>About the Film</h1>
-      <p>
-        This video shows a student’s-eye perspective during a 15-minute break—stepping
-        out of class to reset, breathe, and power up for the second half. The filming
-        choice is intentional—first-person framing and simple cuts—to represent how the
-        campus actually looks and feels from the student’s point of view.
-      </p>
+      <div class="about-text">
+        <p>
+          My name is Jana Mohsen. I am majoring in BOS and minoring in Interactive Media. I am a senior who often walks to the convenience store during class breaks, and this routine inspired the video. 
+        </p>
+        <p>
+          I wanted it to feel like a perspective video, showing what I actually see as I walk. That’s why the filming is intentionally casual and not polished, because it reflects how I personally experience the moment.
+        </p>
+        <p>
+          Walking outside helps me reconnect with nature. On the way, I usually shuffle my playlist and let random songs play. This habit avoids wasting time deciding what to listen to, while also adding a spontaneous mood to my walk. These details are what I wanted the film to capture — a reset before the second half of class.
+        </p>
+      </div>
     </section>
   </main>
 
