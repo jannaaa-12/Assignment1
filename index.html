@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>30MFF Website</title>
+  <!-- Link to styles -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Small interactive cursor follower -->
+  <div class="cursor" aria-hidden="true"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#video">Video</a>
+      <a href="#gallery">Photo Gallery</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HOME ===== -->
+    <section id="home" class="page">
+      <h1>My 30MFF Film</h1>
+      <p class="student">Jana Mohsen, Comms Lab Assignment 1, 2025</p>
+      <p class="tagline">Life as an NYUAD student.</p>
+      <img src="media/Home.jpeg" alt="Film poster" class="hero">
+    </section>
+
+    <!-- ===== VIDEO (YouTube embed link) ===== -->
+    <section id="video" class="page" hidden>
+      <h1>Watch the Film</h1>
+      <div class="video-embed">
+        <iframe
+          src="https://www.youtube.com/embed/RTP9gCut6AQ"
+          title="30MFF Film — Jana Mohsen"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section id="gallery" class="page" hidden>
+      <h1>Photo Gallery</h1>
+      <div class="gallery">
+        <button id="prev" class="arrow" aria-label="Previous">⟨</button>
+        <img id="slide" src="media/Pic1.jpeg" alt="Gallery photo">
+        <button id="next" class="arrow" aria-label="Next">⟩</button>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="page" hidden>
+      <h1>About the Film</h1>
+      <div class="about-text">
+        <p>
+          My name is Jana Mohsen. I am majoring in BOS and minoring in Interactive Media.
+          I’m a senior who often walks to the convenience store during class breaks,
+          and that routine inspired this video.
+        </p>
+        <p>
+          I wanted it to feel like a perspective video—what I actually see as I walk—
+          so the filming is intentionally casual and not polished. That choice reflects
+          how the moment feels to me, not a staged version of it.
+        </p>
+        <p>
+          Walking outside helps me reconnect with the space around me. I usually shuffle
+          my playlist and let random songs carry me so I don’t waste time deciding.
+          That spontaneous soundtrack and the short walk are the reset I need before
+          the second half of class.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>Jana Mohsen — Assignment 1, Comms Lab</p>
+  </footer>
+
+  <!-- Link to JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
